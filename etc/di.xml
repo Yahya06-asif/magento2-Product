@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="test_reviews_listing_data_source" xsi:type="string">MdCustomerReviewCollection</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Magento\Catalog\Model\ProductRepository" type="Update\Product\Model\ProductRepository" />
+    <virtualType name="MdCustomerReviewCollection" type="Update\Product\Ui\DataProvider\Reviews\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">updated_product</argument>
+        </arguments>
+    </virtualType>
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <menu>
+        <add id="Update_Product::Updated"
+             title="Product Log" module="Update_Product"
+             sortOrder="800" parent="DevHub_QuickRFQ::DevHub"
+             action="test/create/create"
+             resource="DevHub_QuickRFQ::DevHub"
+        />
+    </menu>
+</config>
+

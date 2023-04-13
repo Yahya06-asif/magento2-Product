@@ -1,0 +1,26 @@
+{
+    "updated_product": {
+        "column": {
+            "entity_id": true,
+            "product_id": true,
+            "admin_name": true,
+            "name": true,
+            "old_name": true,
+            "sku": true,
+            "qty": true,
+            "old_qty": true,
+            "status": true,
+            "old_status": true,
+            "url_key": true,
+            "product_type": true,
+            "price": true,
+            "old_price": true,
+            "special_price": true,
+            "old_special_price": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

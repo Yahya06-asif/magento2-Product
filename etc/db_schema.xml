@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="updated_product" resource="sales" engine="innodb" comment="Form_Data">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="ENTITY_ID"/>
+        <column xsi:type="varchar" name="product_id" comment="Product ID"/>
+        <column xsi:type="varchar" name="admin_name" comment="Admin Name" />
+        <column xsi:type="varchar" name="name" comment="Name"/>
+        <column xsi:type="varchar" name="old_name" comment="Old Name"/>
+        <column xsi:type="varchar" name="sku" comment="SKU"/>
+        <column xsi:type="double" name="qty" comment="Quantity"/>
+        <column xsi:type="double" name="old_qty" comment="Old Quantity"/>
+        <column xsi:type="varchar" name="status" comment="Status"/>
+        <column xsi:type="varchar" name="old_status" comment="Old Status"/>
+        <column xsi:type="varchar" name="url_key" comment="URL Key"/>
+        <column xsi:type="varchar" name="product_type" comment="Product Type"/>
+        <column xsi:type="double" name="price" comment="Price"/>
+        <column xsi:type="double" name="old_price" comment="Old Price"/>
+        <column xsi:type="double" name="special_price" comment="Special Price"/>
+        <column xsi:type="double" name="old_special_price" comment="Old Special Price"/>
+        <column xsi:type="varchar" name="updated_at" comment="Updated"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+    </table>
+</schema>
